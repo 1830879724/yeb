@@ -1,14 +1,14 @@
 server:
   # 端口
-  port: 8089
+  port: 8086
 spring:
   # 数据源配置
   datasource:
-  driver-class-name: com.mysql.jdbc.Driver
+  driver-class-name: com.mysql.cj.jdbc.Driver
   url: jdbc:mysql://127.0.0.1:3306/yeb?useUnicode=true&characterEncoding=UTF-
   8&serverTimezone=Asia/Shanghai
   username: root
-  password: root
+  password: 123456
   #sping Boot 自帶連接池 hikari
   hikari:
   # 连接池名
@@ -41,3 +41,4 @@ spring:
     logging:
       level:
         com.xxxx.server.mapper: debug
+
