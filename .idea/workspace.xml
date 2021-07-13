@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e3e247-aa81-445c-ae8a-a025e77dec52" name="Default Changelist" comment="获取当前登录用户信息">
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/config/security/JwtAuthencationTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/config/security/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="17e3e247-aa81-445c-ae8a-a025e77dec52" name="Default Changelist" comment="配置Security登录授权过滤器">
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/config/security/RestAuthorizationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/config/security/RestfulAccessDeniedHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/config/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +147,7 @@
       <workItem from="1626071687162" duration="211000" />
       <workItem from="1626072021024" duration="3238000" />
       <workItem from="1626078799390" duration="573000" />
-      <workItem from="1626079382353" duration="14655000" />
+      <workItem from="1626079382353" duration="16342000" />
     </task>
     <task id="LOCAL-00001" summary="逆向工程 -引入mybatis-plus代码生成器">
       <created>1626082144598</created>
@@ -183,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626140692807</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="配置Security登录授权过滤器">
+      <created>1626142981744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626142981744</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +215,7 @@
     <MESSAGE value="公共返回对象" />
     <MESSAGE value="登录之后返回token" />
     <MESSAGE value="获取当前登录用户信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取当前登录用户信息" />
+    <MESSAGE value="配置Security登录授权过滤器" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置Security登录授权过滤器" />
   </component>
 </project>

@@ -22,7 +22,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private IAdminService adminService;
-
+    @Autowired
+    private RestAuthorizationEntryPoint restAuthorizationEntryPoint;
+    @Autowired
+    private RestfulAccessDeniedHandler restfulAccessDeniedHandler;
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService()).passwordEncoder(passwordEncoder());
@@ -39,20 +42,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
               .and()
               .authorizeRequests()
               //允许登录访问
-              .antMatchers("/login","logout")
+              .antMatchers("/login","/logout")
               .permitAll()
               //除了上面的所有请求都要认证
               .anyRequest()
               .authenticated()
               .and()
+              //禁用缓存
               .headers()
               .cacheControl();
-      //添加jwt登录授权拦截器
+        //添加jwt登录授权拦截器
         http.addFilterBefore(jwtAuthencationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
         //添加自定义未授权喝未登录结果返回
         http.exceptionHandling()
-                .accessDeniedHandler()
-                .authenticationEntryPoint();
+                //当访问接口没有权限时，自定义返回结果
+                .accessDeniedHandler(restfulAccessDeniedHandler)
+                //当没有登录或token访问接口，自定义返回结果
+                .authenticationEntryPoint(restAuthorizationEntryPoint);
     }
 
     @Bean
