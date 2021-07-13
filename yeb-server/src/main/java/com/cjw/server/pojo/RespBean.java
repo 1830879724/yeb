@@ -28,6 +28,15 @@ public class RespBean {
     public static RespBean success(String message,Object obj){
         return new RespBean(200,message,obj);
     }
+    /**
+     * 成功返回结果
+     * @param message
+     * @return
+     */
+    public static RespBean success(String message){
+        return new RespBean(200,message,null);
+    }
+
 
     /**
      * 失败返回结果

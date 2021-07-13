@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e3e247-aa81-445c-ae8a-a025e77dec52" name="Default Changelist" comment="公共返回对象">
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/AdminLogin.java" afterDir="false" />
+    <list default="true" id="17e3e247-aa81-445c-ae8a-a025e77dec52" name="Default Changelist" comment="登录之后返回token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/mapper/AdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/RespBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/RespBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/IAdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/impl/AdminServiceImpl.java" afterDir="false" />
     </list>
@@ -149,7 +149,7 @@
       <workItem from="1626071687162" duration="211000" />
       <workItem from="1626072021024" duration="3238000" />
       <workItem from="1626078799390" duration="573000" />
-      <workItem from="1626079382353" duration="11267000" />
+      <workItem from="1626079382353" duration="12257000" />
     </task>
     <task id="LOCAL-00001" summary="逆向工程 -引入mybatis-plus代码生成器">
       <created>1626082144598</created>
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626088106926</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="登录之后返回token">
+      <created>1626139458249</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626139458249</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +201,7 @@
     <MESSAGE value="逆向工程 -引入mybatis-plus代码生成器" />
     <MESSAGE value="Jwt Token工具类" />
     <MESSAGE value="公共返回对象" />
-    <option name="LAST_COMMIT_MESSAGE" value="公共返回对象" />
+    <MESSAGE value="登录之后返回token" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录之后返回token" />
   </component>
 </project>
