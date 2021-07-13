@@ -78,9 +78,14 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
         return RespBean.success("登录成功!",tokenMap);
     }
 
+    /**
+     * 根据用户名获取用户
+     * @param username
+     * @return
+     */
     @Override
     public Admin getAdminByUserName(String username) {
-        return adminMapper.selectOne(new QueryWrapper<Admin>().eq("username",username).
-                eq("enabled",true));
+        return adminMapper.selectOne(new QueryWrapper<Admin>().eq("username",username)
+                .eq("enabled",true));
     }
 }

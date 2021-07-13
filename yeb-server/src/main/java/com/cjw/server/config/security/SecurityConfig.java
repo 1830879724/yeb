@@ -45,9 +45,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 "/doc.html",
                 "/webjars/**",
                 "/swagger-resources/**",
-                "/v2/api-docs/**",
-                "/captcha",
-                "/ws/**"
+                "/v2/api-docs/**"
         );
     }
 
@@ -61,10 +59,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
               .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
               .and()
               .authorizeRequests()
-              //允许登录访问
-              .antMatchers("/login","/logout")
-              .permitAll()
-              //除了上面的所有请求都要认证
+              //所有请求都要认证
               .anyRequest()
               .authenticated()
               .and()

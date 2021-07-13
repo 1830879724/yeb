@@ -1,5 +1,6 @@
 package com.cjw.server.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -57,6 +58,7 @@ public class Admin implements Serializable , UserDetails {
     private String password;
 
     @ApiModelProperty(value = "用户头像")
+    @TableField("userFace")
     private String userFace;
 
     @ApiModelProperty(value = "备注")

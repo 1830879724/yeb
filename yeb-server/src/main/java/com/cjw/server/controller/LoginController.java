@@ -1,8 +1,7 @@
 package com.cjw.server.controller;
 
-import com.baomidou.mybatisplus.extension.api.R;
 import com.cjw.server.pojo.Admin;
-import com.cjw.server.pojo.AdminLogin;
+import com.cjw.server.pojo.AdminLoginParam;
 import com.cjw.server.pojo.RespBean;
 import com.cjw.server.service.IAdminService;
 import io.swagger.annotations.Api;
@@ -10,7 +9,9 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
 
 import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
@@ -27,8 +28,8 @@ public class LoginController {
 
     @ApiOperation(value = "登录之后返回token")
     @PostMapping("/login")
-    public RespBean login(AdminLogin adminLogin, HttpServletRequest request){
-        return  adminService.login(adminLogin.getUsername(),adminLogin.getPassword(),request);
+    public RespBean login( AdminLoginParam adminLoginParam, HttpServletRequest request){
+        return  adminService.login(adminLoginParam.getUsername(), adminLoginParam.getPassword(),request);
     }
 
     @ApiOperation(value = "获取当前登录用户信息")
@@ -48,6 +49,7 @@ public class LoginController {
     }
 
     @ApiOperation(value = "退出登录!")
+    @PostMapping("/logout")
     public RespBean logout(){
         return RespBean.success("退出成功");
     }

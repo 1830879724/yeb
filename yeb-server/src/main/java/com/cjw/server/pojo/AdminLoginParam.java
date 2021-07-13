@@ -11,9 +11,9 @@ import lombok.experimental.Accessors;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@Accessors
-@ApiModel(value = "AdminLogin对象",description = " ")
-public class AdminLogin {
+@Accessors(chain = true)
+@ApiModel(value = "AdminLogin对象",description = "")
+public class AdminLoginParam {
 
     @ApiModelProperty(value = "用户名",readOnly = true)
     private String username;
