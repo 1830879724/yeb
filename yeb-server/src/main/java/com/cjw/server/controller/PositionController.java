@@ -60,7 +60,7 @@ public class PositionController {
 
     @ApiOperation(value = "删除职位信息")
     @DeleteMapping("/{id}")
-    public RespBean deletePosition(@RequestBody Integer id){
+    public RespBean deletePosition(Integer id){
         if (positionService.removeById(id)){
             return RespBean.success("删除成功");
         }
