@@ -45,6 +45,7 @@ public class LoginController {
         Admin admin =adminService.getAdminByUserName(username);
         //用户密码不返回
         admin.setPassword(null);
+        admin.setRoles(adminService.getRoles(admin.getId()));
         return admin;
     }
 

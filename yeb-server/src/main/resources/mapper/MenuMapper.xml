@@ -69,10 +69,10 @@
     </select>
 
     <resultMap id="MenuWithRole" type="com.cjw.server.pojo.Menu" extends="BaseResultMap">
-        <collection property="children" ofType="com.cjw.server.pojo.Role">
+        <collection property="roles" ofType="com.cjw.server.pojo.Role">
             <id column="rid" property="id" />
-            <result column="rname" property="rname" />
-            <result column="rnameZh" property="rnameZh" />
+            <result column="rname" property="name" />
+            <result column="rnameZh" property="nameZh" />
         </collection>
     </resultMap>
     <!--根据角色获取菜单列表-->
@@ -80,7 +80,7 @@
         SELECT
             m.*,
             r.id AS rid,
-            r.`name` AS rname,
+            r.name AS rname,
             r.nameZh AS rnameZh
         FROM
             t_menu m,

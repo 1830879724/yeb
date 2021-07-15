@@ -4,12 +4,13 @@ import com.cjw.server.pojo.Menu;
 import com.cjw.server.pojo.Role;
 import com.cjw.server.service.IMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
+
 import org.springframework.security.access.ConfigAttribute;
 
 import org.springframework.security.access.SecurityConfig;
 import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
+import org.springframework.stereotype.Component;
 import org.springframework.util.AntPathMatcher;
 
 import java.util.Collection;
@@ -18,7 +19,7 @@ import java.util.List;
 /**
  * 根据url分析请求的角色
  */
-@Configuration
+@Component
 public class CustomFilter implements FilterInvocationSecurityMetadataSource {
 
     @Autowired
@@ -34,7 +35,7 @@ public class CustomFilter implements FilterInvocationSecurityMetadataSource {
         for (Menu menu : menus) {
             //判断请求url与菜单角色是否匹配
             if (antPathMatcher.match(menu.getUrl(),requestUrl)){
-           String[] str = menu.getRoles().stream().map(Role::getName).toArray(String[]::new);
+            String[] str = menu.getRoles().stream().map(Role::getName).toArray(String[]::new);
            return SecurityConfig.createList(str);
             }
         }
@@ -48,6 +49,6 @@ public class CustomFilter implements FilterInvocationSecurityMetadataSource {
 
     @Override
     public boolean supports(Class<?> aClass) {
-        return false;
+        return true;
     }
 }
