@@ -1,4 +1,4 @@
-package com.cjw.server.config.security;
+package com.cjw.server.config.security.component;
 
 
 import io.jsonwebtoken.*;

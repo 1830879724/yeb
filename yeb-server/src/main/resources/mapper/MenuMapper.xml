@@ -64,6 +64,32 @@
             ar.adminId=#{id}
           and
             m2.enabled = true
+        ORDER BY
+            m2.id
+    </select>
 
+    <resultMap id="MenuWithRole" type="com.cjw.server.pojo.Menu" extends="BaseResultMap">
+        <collection property="children" ofType="com.cjw.server.pojo.Role">
+            <id column="rid" property="id" />
+            <result column="rname" property="rname" />
+            <result column="rnameZh" property="rnameZh" />
+        </collection>
+    </resultMap>
+    <!--根据角色获取菜单列表-->
+    <select id="getMenusWithRole" resultMap="MenuWithRole">
+        SELECT
+            m.*,
+            r.id AS rid,
+            r.`name` AS rname,
+            r.nameZh AS rnameZh
+        FROM
+            t_menu m,
+            t_menu_role mr,
+            t_role r
+        WHERE
+            m.id = mr.mid
+          AND r.id = mr.rid
+        ORDER BY
+            m.id
     </select>
 </mapper>

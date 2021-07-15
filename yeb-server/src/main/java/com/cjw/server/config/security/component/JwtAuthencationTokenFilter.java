@@ -1,4 +1,4 @@
-package com.cjw.server.config.security;
+package com.cjw.server.config.security.component;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,7 +27,7 @@ public class JwtAuthencationTokenFilter  extends OncePerRequestFilter {
     private String tokenHead;
 
     @Autowired
-    private  JwtTokenUtil jwtTokenUtil;
+    private JwtTokenUtil jwtTokenUtil;
 
     @Autowired
     private UserDetailsService userDetailsService;

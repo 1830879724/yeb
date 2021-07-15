@@ -3,7 +3,7 @@ package com.cjw.server.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.cjw.server.config.security.JwtTokenUtil;
+import com.cjw.server.config.security.component.JwtTokenUtil;
 import com.cjw.server.mapper.AdminMapper;
 import com.cjw.server.pojo.Admin;
 import com.cjw.server.pojo.RespBean;
@@ -15,7 +15,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import javax.servlet.http.HttpServletRequest;
