@@ -22,11 +22,12 @@
         <collection property="children" ofType="com.cjw.server.pojo.Menu">
             <id column="id2" property="id" />
             <result column="name2" property="name" />
+            <collection property="children" ofType="com.cjw.server.pojo.Menu">
+                <id column="id3" property="id" />
+                <result column="name3" property="name" />
+            </collection>
         </collection>
-        <collection property="children" ofType="com.cjw.server.pojo.Menu">
-            <id column="id3" property="id" />
-            <result column="name3" property="name" />
-        </collection>
+
     </resultMap>
 
     <!-- 通用查询结果列 -->
