@@ -74,4 +74,10 @@ public class PermissionController {
         return  menuRoleService.list(new QueryWrapper<MenuRole>().eq("rid",rid))
                 .stream().map(MenuRole::getMid).collect(Collectors.toList());
     }
+
+    @ApiOperation(value = "更新角色菜单")
+    @PutMapping("/")
+    public  RespBean updateMenuRole(Integer rid,Integer[] mids){
+        return menuRoleService.updateMenuRole(rid,mids);
+    }
 }
