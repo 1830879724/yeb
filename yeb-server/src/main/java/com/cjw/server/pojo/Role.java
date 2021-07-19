@@ -1,5 +1,6 @@
 package com.cjw.server.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -35,6 +36,7 @@ public class Role implements Serializable {
     private String name;
 
     @ApiModelProperty(value = "角色名称")
+    @TableField("nameZh")
     private String nameZh;
 
 
