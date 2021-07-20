@@ -3,6 +3,7 @@ package com.cjw.server.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.cjw.server.AdminUtils;
 import com.cjw.server.config.security.component.JwtTokenUtil;
 import com.cjw.server.mapper.AdminMapper;
 import com.cjw.server.mapper.RoleMapper;
@@ -106,6 +107,17 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
     @Override
     public List<Role> getRoles(Integer adminId) {
         return  roleMapper.getRoles(adminId);
+    }
+
+    /**
+     * 获取所有操作员
+     * @param keywords
+     * @return
+     */
+    @Override
+    public List<Admin> getAllAdmin(String keywords) {
+        return adminMapper.getAllAdmin(
+                AdminUtils.getCurrentAdmin().getId(),keywords);
     }
 
 
