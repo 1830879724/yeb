@@ -3,6 +3,7 @@ package com.cjw.server.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.cjw.server.pojo.Department;
+import com.cjw.server.pojo.RespBean;
 
 import java.util.List;
 
@@ -20,4 +21,11 @@ public interface IDepartmentService extends IService<Department> {
      * @return
      */
     List<Department> getAllDepartments();
+
+    /**
+     * 添加部门
+     * @param department
+     * @return
+     */
+    RespBean addDep(Department department);
 }

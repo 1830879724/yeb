@@ -2,13 +2,11 @@ package com.cjw.server.controller;
 
 
 import com.cjw.server.pojo.Department;
+import com.cjw.server.pojo.RespBean;
 import com.cjw.server.service.IDepartmentService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,6 +30,13 @@ public class DepartmentController {
     @GetMapping("/")
     public List<Department> getAllDepartments(){
         return departmentService.getAllDepartments();
+    }
+
+
+    @ApiOperation(value = "添加部门")
+    @PostMapping("/")
+    public RespBean addDep(@RequestBody Department department){
+        return departmentService.addDep(department);
     }
 
 }
