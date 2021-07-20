@@ -16,5 +16,16 @@
     <sql id="Base_Column_List">
         id, name, parentId, depPath, enabled, isParent
     </sql>
+    <resultMap id="DepartmentWithChildren" type="com.cjw.server.pojo.Department" extends="BaseResultMap">
+        <collection property="children" ofType="com.cjw.server.pojo.Department"
+                    select="com.cjw.server.mapper.DepartmentMapper.getAllDepartments" column="id">
+        </collection>
+    </resultMap>
 
+    <!--获取所有部门-->
+    <select id="getAllDepartments" resultMap="DepartmentWithChildren">
+            select  <include refid="Base_Column_List" />
+            from t_department
+             where parentId =#{parentId}
+    </select>
 </mapper>
