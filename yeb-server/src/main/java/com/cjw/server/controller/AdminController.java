@@ -3,7 +3,9 @@ package com.cjw.server.controller;
 
 import com.cjw.server.pojo.Admin;
 import com.cjw.server.pojo.RespBean;
+import com.cjw.server.pojo.Role;
 import com.cjw.server.service.IAdminService;
+import com.cjw.server.service.IRoleService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,6 +26,9 @@ public class AdminController {
 
     @Autowired
     private IAdminService adminService;
+
+    @Autowired
+    private IRoleService roleService;
 
     @ApiOperation(value = "获取所有操作员")
     @GetMapping("/")
@@ -50,6 +55,17 @@ public class AdminController {
 
     }
 
+    @ApiOperation(value = "获取所有角色")
+    @GetMapping("/roles")
+    public List<Role> getAllRole(){
+        return roleService.list();
+    }
 
+
+    @ApiOperation(value = "更新操作员角色")
+    @PutMapping("/role")
+    public  RespBean updateAdminRole(Integer adminId,Integer[] rids){
+        return adminService.updateAdminRole(adminId,rids);
+    }
 
 }
