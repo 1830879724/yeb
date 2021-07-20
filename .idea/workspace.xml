@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e3e247-aa81-445c-ae8a-a025e77dec52" name="Default Changelist" comment="删除部门">
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/AdminUtils.java" afterDir="false" />
+    <list default="true" id="17e3e247-aa81-445c-ae8a-a025e77dec52" name="Default Changelist" comment="获取所有操作员">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/IAdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +56,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="MyBatisLogPluginindexNum" value="538" />
+    <property name="MyBatisLogPluginindexNum" value="612" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -166,7 +162,7 @@
       <workItem from="1626223641799" duration="9268000" />
       <workItem from="1626309371098" duration="3577000" />
       <workItem from="1626312962377" duration="19618000" />
-      <workItem from="1626657952384" duration="19570000" />
+      <workItem from="1626657952384" duration="21786000" />
     </task>
     <task id="LOCAL-00001" summary="逆向工程 -引入mybatis-plus代码生成器">
       <created>1626082144598</created>
@@ -343,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626761405295</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="获取所有操作员">
+      <created>1626763710997</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1626763710997</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +387,8 @@
     <MESSAGE value="权限组菜单更新功能" />
     <MESSAGE value="获取所有部门" />
     <MESSAGE value="删除部门" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除部门" />
+    <MESSAGE value="获取所有操作员" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取所有操作员" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
