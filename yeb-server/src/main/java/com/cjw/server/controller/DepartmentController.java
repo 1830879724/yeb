@@ -4,6 +4,7 @@ package com.cjw.server.controller;
 import com.cjw.server.pojo.Department;
 import com.cjw.server.pojo.RespBean;
 import com.cjw.server.service.IDepartmentService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -37,6 +38,13 @@ public class DepartmentController {
     @PostMapping("/")
     public RespBean addDep(@RequestBody Department department){
         return departmentService.addDep(department);
+    }
+
+    @ApiOperation(value ="删除部门")
+    @DeleteMapping("/{id}")
+    public RespBean deleteDep(@PathVariable Integer id){
+        return departmentService.deleteDep(id);
+
     }
 
 }
