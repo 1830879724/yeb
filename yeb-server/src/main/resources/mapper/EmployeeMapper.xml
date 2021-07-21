@@ -41,7 +41,7 @@
     </sql>
 
     <resultMap id="EmployeeInfo" type="com.cjw.server.pojo.Employee" extends="BaseResultMap">
-       <association property="nationId" javaType="com.cjw.server.pojo.Nation">
+       <association property="nation" javaType="com.cjw.server.pojo.Nation">
            <id column="nid" property="id" />
            <result column="nname" property="name"/>
        </association>
@@ -80,7 +80,7 @@
         FROM
             t_employee e
                 LEFT JOIN t_nation n ON e.nationId = n.id
-                LEFT JOIN t_politics_status t ON e.politicId = t.id
+                LEFT JOIN t_politics_status p ON e.politicId = p.id
                 LEFT JOIN t_department d ON e.departmentId = d.id
                 LEFT JOIN t_joblevel j ON e.jobLevelId = j.id
                 LEFT JOIN t_position pos ON e.posId = pos.id
@@ -102,7 +102,7 @@
                 <if test="null!=employee.departmentId">
                     AND e.departmentId =#{employee.departmentId}
                 </if>
-                <if test="null!=employee.beginDateScope and 2==beginDateScope.length">
+                <if test="null!=beginDateScope and 2==beginDateScope.length">
                     AND e.beginDate BETWEEN #{beginDateScope[0]}  and #{beginDateScope[1]}
                 </if>
                 ORDER BY
