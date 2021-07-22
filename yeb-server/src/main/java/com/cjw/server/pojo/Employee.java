@@ -146,7 +146,6 @@ public class Employee implements Serializable {
     @ApiModelProperty(value = "离职日期")
     @TableField("notWorkDate")
     @JsonFormat(pattern = "yyyy-MM-dd" ,timezone ="Asia/fujian")
-    @Excel(name = "离职日期",width = 20,format = "yyyy-MM-dd")
     private LocalDate notWorkDate;
 
     @ApiModelProperty(value = "合同起始日期")
@@ -163,7 +162,6 @@ public class Employee implements Serializable {
 
     @ApiModelProperty(value = "工龄")
     @Excel(name = "工龄")
-    @TableField("workAge")
     private Integer workAge;
 
     @ApiModelProperty(value = "工资账套ID")
