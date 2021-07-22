@@ -10,7 +10,7 @@ import java.sql.SQLIntegrityConstraintViolationException;
 /**
  * 全局异常处理
  */
-@RestControllerAdvice
+//@RestControllerAdvice
 public class GlobalException {
     @ExceptionHandler(SQLException.class)
     public RespBean mySQlException(SQLException e){
