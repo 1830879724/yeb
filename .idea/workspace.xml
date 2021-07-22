@@ -4,9 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e3e247-aa81-445c-ae8a-a025e77dec52" name="Default Changelist" comment="员工添加功能">
+    <list default="true" id="17e3e247-aa81-445c-ae8a-a025e77dec52" name="Default Changelist" comment="员工更新及删除">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_annotation_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_base_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_spring_boot_starter_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_web_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_06.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/exception/GlobalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/exception/GlobalException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Joblevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Joblevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Nation.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Nation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/PoliticsStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/PoliticsStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/cjw/server/pojo/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/yeb-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/yeb-server.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +78,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="MyBatisLogPluginindexNum" value="784" />
+    <property name="MyBatisLogPluginindexNum" value="799" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -160,7 +184,7 @@
       <workItem from="1626223641799" duration="9268000" />
       <workItem from="1626309371098" duration="3577000" />
       <workItem from="1626312962377" duration="19618000" />
-      <workItem from="1626657952384" duration="40530000" />
+      <workItem from="1626657952384" duration="42441000" />
     </task>
     <task id="LOCAL-00001" summary="逆向工程 -引入mybatis-plus代码生成器">
       <created>1626082144598</created>
@@ -379,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626837576540</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="员工更新及删除">
+      <created>1626923499484</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1626923499484</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +429,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="公共返回对象" />
     <MESSAGE value="登录之后返回token" />
     <MESSAGE value="获取当前登录用户信息" />
     <MESSAGE value="配置Security登录授权过滤器" />
@@ -423,7 +453,8 @@
     <MESSAGE value="操作员角色功能实现" />
     <MESSAGE value="获取所有员工分页查询" />
     <MESSAGE value="员工添加功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="员工添加功能" />
+    <MESSAGE value="员工更新及删除" />
+    <option name="LAST_COMMIT_MESSAGE" value="员工更新及删除" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

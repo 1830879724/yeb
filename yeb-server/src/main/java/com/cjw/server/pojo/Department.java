@@ -1,5 +1,6 @@
 package com.cjw.server.pojo;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -35,6 +36,7 @@ public class Department implements Serializable {
     private Integer id;
 
     @ApiModelProperty(value = "部门名称")
+    @Excel(name = "部门名称" )
     private String name;
 
     @ApiModelProperty(value = "父id")
